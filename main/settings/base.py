@@ -39,8 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     #third party app
-    'rest_framework',
     'drf_yasg',
+    'rest_framework',
     'rest_framework.authtoken',
     'dj_rest_auth',
     #!"debug_toolbar",
@@ -191,7 +191,7 @@ REST_FRAMEWORK = {
     ]
 }
 
-#REST_AUTH_SERIALIZERS = {
-#    'TOKEN_SERIALIZER': 'users.serializers.CustomTokenSerializer',
+REST_AUTH_SERIALIZERS = {
+    'TOKEN_SERIALIZER': 'users.serializers.CustomTokenSerializer',
     
-#}
+}
